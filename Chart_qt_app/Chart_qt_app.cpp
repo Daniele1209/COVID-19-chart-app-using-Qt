@@ -66,7 +66,8 @@ void Chart_qt_app::create_chart_nc() {
     QChartView* chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
     QPalette pal = this->chart_window->palette();
-    pal.setColor(QPalette::Window, QRgb(0xffffff));
+    pal.setColor(QPalette::Window, QRgb(0x26848D));
+    pal.setColor(QPalette::WindowText, QRgb(0x26848D));
     this->chart_window->setPalette(pal);
     this->chart_window->setCentralWidget(chartView);
     this->chart_window->resize(1000, 500);
