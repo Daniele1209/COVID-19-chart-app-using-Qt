@@ -59,4 +59,9 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\qmake\qtvars_x64_Debug.props">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

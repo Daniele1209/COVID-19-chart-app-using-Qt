@@ -99,6 +99,9 @@
     <ClInclude Include="Repository.h" />
     <ClInclude Include="x64\Debug\uic\ui_Chart_qt_app.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\qmake\qtvars_x64_Debug.props" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />

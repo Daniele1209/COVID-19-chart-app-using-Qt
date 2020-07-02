@@ -3,7 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_Chart_qt_app.h"
 #include "Repository.h"
-#include <QtCharts>
+#include <QtCharts/QBarSet>
 
 using namespace QtCharts;
 

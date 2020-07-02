@@ -27,6 +27,7 @@ void Chart_qt_app::create_chart_nc() {
             names.push_back(t.get_name());
             values.push_back(t.get_newc());
         }
+    QBarSet* set0 = new QBarSet("Students");
 
 }
 void Chart_qt_app::create_chart_nd() {
