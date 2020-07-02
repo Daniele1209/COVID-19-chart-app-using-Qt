@@ -36,3 +36,20 @@ ostream& operator<<(ostream& os, Country& p) {
         << "," << to_string(p.get_totalc()) << "," << to_string(p.get_totald()) << endl;
     return os;
 }
+
+istream& operator>>(istream& is, Country& q) {
+    string line;
+    getline(is, line);
+    vector<string> tokens = q.tokenize(line, ',');
+    if (tokens.size() != 6)
+        return is;
+    if (tokens.at(0) == "3/17/2020") {
+        q.set_date(tokens.at(0));
+        q.set_name(tokens.at(1));
+        q.set_newc(stoi(tokens.at(2)));
+        q.set_newd(stoi(tokens.at(3)));
+        q.set_totalc(stoi(tokens.at(4)));
+        q.set_totald(stoi(tokens.at(5)));
+    }
+    return is;
+}

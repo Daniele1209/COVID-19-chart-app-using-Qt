@@ -26,14 +26,15 @@ public:
 	int get_totald() { return this->total_deaths; }
 	string get_name() { return this->name; }
 	string get_date() { return this->date; }
-	/*
+	
 	//setters
-	void set_ra(int i) { RA = i; }
-	void set_dec(int i) { DEC = i; }
-	void set_name(string nm) { name = nm; }
-	void set_constellation(string c) { constellation = c; }
-	void set_diameter(int i) { diameter = i; }
-	*/
+	void set_date(string d) { date = d; }
+	void set_name(string n) { name = n; }
+	void set_newc(int nc) { new_cases = nc; }
+	void set_newd(int nd) { new_deaths =nd; }
+	void set_totalc(int tc) { total_cases = tc; }
+	void set_totald(int td) { total_deaths = td; }
+	
 
 	//string mode
 	//string to_String();
