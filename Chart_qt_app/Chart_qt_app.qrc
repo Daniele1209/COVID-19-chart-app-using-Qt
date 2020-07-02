@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Chart_qt_app">
+    <file>covid _back.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Chart_qt_appClass</class>
+ <widget class="QMainWindow" name="Chart_qt_appClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chart_qt_app</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Chart_qt_app/covid _back.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>80</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;Microsoft YaHei&quot;;
+text-decoration: underline;
+color: rgb(112, 229, 255);</string>
+    </property>
+    <property name="text">
+     <string>COVID-19 CHARTS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_exit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>570</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Microsoft YaHei&quot;;
+color: rgb(112, 229, 255);</string>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>711</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="button_nc">
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(112, 229, 255);</string>
+       </property>
+       <property name="text">
+        <string>NEW CASES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_nd">
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(112, 229, 255);</string>
+       </property>
+       <property name="text">
+        <string>NEW DEATHS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_tc">
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(112, 229, 255);</string>
+       </property>
+       <property name="text">
+        <string>TOTAL CASES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_td">
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot;Microsoft YaHei&quot;;
+color: rgb(112, 229, 255);</string>
+       </property>
+       <property name="text">
+        <string>TOTAL DEATHS</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Chart_qt_app.qrc"/>
+ </resources>
+ <connections/>
+</ui>
