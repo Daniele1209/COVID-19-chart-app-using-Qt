@@ -7,6 +7,7 @@ void Repo::load_file() {
     {
         this->countries.push_back(curr);
     }
+    f.close();
 }
 
 vector<Country> Repo::get_countries() {

@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Repo r("WHO-situation-reports.csv");
+    Repo r("WHO-situation-reports1.csv");
     Chart_qt_app w(r);
     w.show();
     return a.exec();

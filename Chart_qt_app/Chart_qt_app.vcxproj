@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WHO-situation-reports.csv" />
+    <None Include="WHO-situation-reports1.csv" />
     <None Include="x64\Debug\qmake\qtvars_x64_Debug.props" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

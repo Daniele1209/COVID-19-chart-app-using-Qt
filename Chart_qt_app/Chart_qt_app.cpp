@@ -24,17 +24,20 @@ void Chart_qt_app::create_chart_nc() {
     vector<int> values;
     vector<string> names;
     for (auto& t : countries)
-        if (t.get_name() != "World") {
+        if (t.get_name() != "World" && t.get_date() == "3/17/2020") {
             names.push_back(t.get_name());
-            values.push_back(t.get_totalc());
+            values.push_back(t.get_newc());
         }
+    /*
     QString str = QString::number(values.size());
     QMessageBox::information(0, "Error !", str);
     QString str2 = QString::number(names.size());
     QMessageBox::information(0, "Error !", str2);
+    */
     QBarSet* set0 = new QBarSet("Countries");
-    for(int val : values)
+    for (int val : values) {
         *set0 << val;
+    }
     QBarSeries* series = new QBarSeries();
     series->append(set0);
 
@@ -53,7 +56,7 @@ void Chart_qt_app::create_chart_nc() {
     series->attachAxis(axisX);
 
     QValueAxis* axisY = new QValueAxis();
-    axisY->setRange(0, 500000);
+    axisY->setRange(0, 3250);
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
 
@@ -62,9 +65,9 @@ void Chart_qt_app::create_chart_nc() {
 
     QChartView* chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
-    QPalette pal = qApp->palette();
+    QPalette pal = this->chart_window->palette();
     pal.setColor(QPalette::Window, QRgb(0xffffff));
-    qApp->setPalette(pal);
+    this->chart_window->setPalette(pal);
     this->chart_window->setCentralWidget(chartView);
     this->chart_window->resize(1000, 500);
     this->chart_window->show();

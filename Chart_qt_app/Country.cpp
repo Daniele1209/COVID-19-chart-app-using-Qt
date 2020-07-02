@@ -48,7 +48,6 @@ istream& operator>>(istream& is, Country& q) {
     if (tokens.size() != 6)
         return is;
 
-    if (tokens.at(0) == "2020-03-17") {
         q.set_date(tokens.at(0));
         q.set_name(tokens.at(1));
         if(tokens.at(2) == " ")
@@ -67,7 +66,6 @@ istream& operator>>(istream& is, Country& q) {
             q.set_totald(0);
         else
             q.set_totald(stoi(tokens.at(5)));
-        return is;
-    }
 
+    return is;
 }

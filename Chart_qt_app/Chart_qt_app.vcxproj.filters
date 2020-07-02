@@ -66,5 +66,8 @@
     <None Include="WHO-situation-reports.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="WHO-situation-reports1.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
