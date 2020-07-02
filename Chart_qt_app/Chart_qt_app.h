@@ -4,6 +4,12 @@
 #include "ui_Chart_qt_app.h"
 #include "Repository.h"
 #include <QtCharts/QBarSet>
+#include <QtCharts/QChart>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QChartView>
+#include <QtCharts/QBarCategoryAxis>
+#include <QtCharts/QValueAxis>
+#include <QMessageBox>
 
 using namespace QtCharts;
 
@@ -18,8 +24,8 @@ private:
     Ui::Chart_qt_appClass ui;
     Repo& repo;
     Country country;
+    QMainWindow* chart_window;
 
-public:
     void connectSignalsAndSlots();
     void create_chart_nc();
     void create_chart_nd();

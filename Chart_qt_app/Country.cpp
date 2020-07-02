@@ -16,7 +16,10 @@ vector<string> Country::tokenize(string& str, char separator) {
     stringstream ss(str);
     string token;
     while (getline(ss, token, separator))
-        result.push_back(token);
+        if(token == "")
+            result.push_back(" ");
+        else
+            result.push_back(token);
     return result;
 }
 
@@ -41,15 +44,30 @@ istream& operator>>(istream& is, Country& q) {
     string line;
     getline(is, line);
     vector<string> tokens = q.tokenize(line, ',');
+
     if (tokens.size() != 6)
         return is;
-    if (tokens.at(0) == "3/17/2020") {
+
+    if (tokens.at(0) == "2020-03-17") {
         q.set_date(tokens.at(0));
         q.set_name(tokens.at(1));
-        q.set_newc(stoi(tokens.at(2)));
-        q.set_newd(stoi(tokens.at(3)));
-        q.set_totalc(stoi(tokens.at(4)));
-        q.set_totald(stoi(tokens.at(5)));
+        if(tokens.at(2) == " ")
+            q.set_newc(0);
+        else
+            q.set_newc(stoi(tokens.at(2)));
+        if (tokens.at(3) == " ")
+            q.set_newd(0);
+        else
+            q.set_newd(stoi(tokens.at(3)));
+        if (tokens.at(4) == " ")
+            q.set_totalc(0);
+        else
+            q.set_totalc(stoi(tokens.at(4)));
+        if (tokens.at(5) == " ")
+            q.set_totald(0);
+        else
+            q.set_totald(stoi(tokens.at(5)));
+        return is;
     }
-    return is;
+
 }

@@ -5,7 +5,7 @@ void Repo::load_file() {
     Country curr;
     while (f >> curr)
     {
-        countries.push_back(curr);
+        this->countries.push_back(curr);
     }
 }
 

@@ -63,5 +63,8 @@
     <None Include="x64\Debug\qmake\qtvars_x64_Debug.props">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="WHO-situation-reports.csv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
