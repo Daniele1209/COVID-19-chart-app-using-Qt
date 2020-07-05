@@ -28,12 +28,12 @@ void Chart_qt_app::create_chart_nc() {
             names.push_back(t.get_name());
             values.push_back(t.get_newc());
         }
-    /*
+    
     QString str = QString::number(values.size());
     QMessageBox::information(0, "Error !", str);
     QString str2 = QString::number(names.size());
     QMessageBox::information(0, "Error !", str2);
-    */
+    
     QBarSet* set0 = new QBarSet("Countries");
     for (int val : values) {
         *set0 << val;
